@@ -4,7 +4,8 @@ selector:'app-user',
 template:`
   <br>
   
-  <input type="text" (input)="onUserInput($event)" value="{{name}}">
+  <!--<input type="text" (input)="onUserInput($event)" value="{{name}}">-->
+  <input type="text" [(ngModel)]="name">
            <p> Hello mr {{name}} from user Component</p> 
            <p> im the user component</p>
 `
