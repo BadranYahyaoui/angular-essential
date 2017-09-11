@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 @Component({
 selector:'app-user',
 template:`
@@ -11,10 +11,15 @@ template:`
 `
 })
 export class UserComponent{
- name='badran';
-  onUserInput(event){
-    this.name=event.target.value;
-  }
+ // name='badrane';
+@Input() name; //decorater @Input imported from input angular Core
+
+
+
+
+  // onUserInput(event){
+  //   this.name=event.target.value;
+  // }
 }
 
 
