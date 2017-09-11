@@ -1,0 +1,3 @@
+ng generate component my-component // or
+ng g        c         my-component
+

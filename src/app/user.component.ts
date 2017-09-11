@@ -13,8 +13,12 @@ template:`
 
   <p> Hello mr {{name}} from user Component</p> 
            <p> im the user component</p>
+  <app-user-detail></app-user-detail>
 `
 })
+
+
+
 export class UserComponent{
  // name='badrane';    Method 2
 @Input() name;    //decorator @Input imported from input angular Core   Method 3 Method 4
