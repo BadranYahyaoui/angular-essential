@@ -12,4 +12,4 @@ this text was in the app component.html
 <br>
 
 
-<app-user [name]="'badraNe'"></app-user>
+<app-user [name]="rootName"  (nameChanged)="OnNameChanged($event)" ></app-user>

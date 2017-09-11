@@ -13,8 +13,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Badran \'s First ';
 // Declare some methods and proprieties
+  rootName='BadranAppComponent:D'
 
 
+
+  OnNameChanged(newName){
+    this.rootName=newName
+  }
 
 
 
