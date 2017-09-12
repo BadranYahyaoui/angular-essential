@@ -3,7 +3,7 @@ import {Component, Input, Output,EventEmitter} from '@angular/core';
 selector:'app-user',
 template:`
   <br>
-  
+  Tyepe your Name pls
   <!--<input type="text" (input)="onUserInput($event)" value="{{name}}">  Method 1 -->
   <!--<input type="text" [(ngModel)]="name"> Method 2 --> 
   <!--<input type="text" [(ngModel)]="name"> Method 3 -->
@@ -11,8 +11,8 @@ template:`
 
   <input type="text" (input)="onUserInput($event)" [value]="name"> 
 
-  <p> Hello mr {{name}} from user Component</p> 
-           <p> im the user component</p>
+  <p> Hello mr {{name}}  </p> 
+          
   <app-user-detail></app-user-detail>
 `
 })

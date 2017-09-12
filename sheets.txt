@@ -1,3 +1,11 @@
 ng generate component my-component // or
 ng g        c         my-component
 
+npm install bootstrap --save
+npm install lodash --save
+
+npm i -g
+
+npm install --save @types/lodash
+
+
