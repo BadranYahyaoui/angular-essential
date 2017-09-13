@@ -18,6 +18,12 @@ export class AppComponent {
 
   number=0;
 
+
+
+
+  rootItems = ['Apples', 'Bananas', 'Cherries'];
+
+
   OnNameChanged(newName){
     this.rootName=newName
   }
@@ -27,7 +33,10 @@ onIncrease(){
     // this.number=_.random(1,10); M1
     this.number=random(1,10);
 }
-
+  onItemWasAdded(newItem) {
+    this.rootItems.push(newItem);
+    // console.log(this.rootItems);
+  }
 
 
 

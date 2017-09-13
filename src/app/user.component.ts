@@ -13,7 +13,7 @@ template:`
 
   <p> Hello mr {{name}}  </p> 
           
-  <app-user-detail></app-user-detail>
+  <!--<app-user-detail></app-user-detail>-->
 `
 })
 
