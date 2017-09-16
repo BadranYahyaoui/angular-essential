@@ -1,0 +1,15 @@
+
+<div class="list-group" >
+  <!--<span *ngFor="let char of characters">-->
+  <!--<app-item [character]="char" > </app-item>-->
+  <!--</span>-->
+<!--or Do dis -->
+  <app-item *ngFor="let char of characters "
+            [character]="char"
+            (sideAssigned)="onSideAssigned($event)" >
+
+  </app-item>
+  <!-- getting input character and giving output sideAssigned -->
+
+
+</div>

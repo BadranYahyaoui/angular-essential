@@ -1,0 +1,15 @@
+<div>
+  <ul class="nav nav-tabs">
+    <li role="presentation" [ngClass]="{ active : chosenList==='all' }" >
+        <a (click)="onChoose('all') " href="#" >All</a>
+    </li>
+    <li role="presentation" [ngClass]="{ active : chosenList==='light' }">
+      <a (click)="onChoose('light')" href="#">Light</a>
+    </li>
+    <li role="presentation" [ngClass]="{ active : chosenList === 'dark'}" >
+      <a (click)="onChoose('dark')" href="#">Dark </a></li>
+     </ul>
+
+
+  <app-list [characters]="getCharacters()" (sideAssigned)="onSideChosen($event)"> </app-list>
+</div>

@@ -1,0 +1,16 @@
+<a href="#"  class="list-group-item ">
+  <h4 class="list-group-item-heading">
+{{character.name}}
+  </h4>
+  <h6>{{character.side}}</h6>
+   <div>
+  <button class="btn btn-primary" (click)="onItemclick('light')">
+    Light
+  </button>
+
+     <button class="btn btn-danger" (click)="onItemclick('dark')" >
+    Dark
+  </button>
+</div>
+
+</a>
