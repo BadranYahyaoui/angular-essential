@@ -4,8 +4,7 @@ ng g        c         my-component
 npm install bootstrap --save
 npm install lodash --save
 
-npm i -g
+npm i -g componentName --spec false //without spec file
 
 npm install --save @types/lodash
-
 

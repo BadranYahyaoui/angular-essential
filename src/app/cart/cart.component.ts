@@ -18,6 +18,7 @@ export class CartComponent implements OnInit {
   onAddItem() {
     console.log(this.items);
     this.itemAdded.emit(this.newItem);
+    this.newItem = '';
   }
 
 }
