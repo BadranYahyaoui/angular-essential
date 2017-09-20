@@ -7,34 +7,21 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { ItemComponent } from './item/item.component';
-// import {UserComponent} from "./user.component";
-// import { UserDetailComponent } from './user-detail/user-detail.component';
-// import  {CartComponent} from "./cart/cart.component"
+import { StarWarsService } from './star-wars.service';
+import { LogService } from './log.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent,
     TabsComponent,
-    ItemComponent,
+    ListComponent,
+    ItemComponent
   ],
   imports: [
-    BrowserModule,
-    FormsModule
+    BrowserModule
   ],
-  providers: [],
+  providers: [StarWarsService, LogService],
   bootstrap: [AppComponent]
 })
-
-
-
-
-
-export class AppModule {
-
-
-
-
-
-
-
-}
+export class AppModule { }
