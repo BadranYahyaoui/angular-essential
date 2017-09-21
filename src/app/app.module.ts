@@ -9,6 +9,9 @@ import { TabsComponent } from './tabs/tabs.component';
 import { ItemComponent } from './item/item.component';
 import { StarWarsService } from './star-wars.service';
 import { LogService } from './log.service';
+import { CreateCharacterComponent } from './create-character/create-character.component';
+
+
 
 
 @NgModule({
@@ -16,7 +19,8 @@ import { LogService } from './log.service';
     AppComponent,
     TabsComponent,
     ListComponent,
-    ItemComponent
+    ItemComponent,
+    CreateCharacterComponent
   ],
   imports: [
     BrowserModule

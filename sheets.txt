@@ -1,5 +1,7 @@
 ng generate component my-component // or
 ng g        c         my-component
+ng g        S         my-Service
+
 
 npm install bootstrap --save
 npm install lodash --save
