@@ -12,11 +12,14 @@ export class CreateCharacterComponent implements OnInit {
     {display:'Dark',value:'dark'},
     ];
 
+
   constructor() { }
 
   ngOnInit() {
   }
 
-
+  onSubmit(submittedForm){
+    console.log(submittedForm)
+  }
 
 }

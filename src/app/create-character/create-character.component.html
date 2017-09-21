@@ -1,14 +1,15 @@
-<form >
-
+<!--<form (ngSubmit)="onSubmit()">-->
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+<!--Bind object to a variable -->
   <div class="form-group">
     <label for="name">Character Name</label>
-    <input type="text" name="name" id="name" class="form-control">
+    <input type="text" name="name" id="name" class="form-control" ngModel>
   </div>
 
 
   <div class="form-group">
     <label for="side">Choose  Side</label>
-    <select name="side" id="side" class="form-control">
+    <select name="side" id="side" class="form-control" ngModel>
 
     <option *ngFor="let option of availableSides" [value]="option.value">
       {{option.display}}
@@ -18,7 +19,7 @@
 
   </div>
 
-  <button type="submit" class="btn btn-primary">Add Characters</button>
+  <button  class="btn btn-primary">Add Characters</button>
 
 
 </form>
